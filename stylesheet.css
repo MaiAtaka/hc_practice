@@ -1,0 +1,155 @@
+@charset "utf-8";
+/*iphone用設定*/
+@media screen and (min-width: 600px) {
+
+    .container {
+        padding: 4%;
+    }
+    
+    .images img {
+        height: 600px;
+        width: 100%;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;   
+        
+    }
+    
+    .header h1 {
+        margin-left: 60px;
+        padding: 5px 15px 0 20px;
+        background-color: darkslategray;
+        font-size: 20px;
+        width: 80px;
+        height: 35px;
+        color: white
+    }
+    
+    .header ul {
+        display: flex;
+        list-style-type: none;
+        width: 250px;
+        margin-right: 60px;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+
+
+.suzuki h1, h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+    font-size: 30px;   
+    padding-top: 40px;
+
+}
+
+
+.image img {
+    border-radius: 50%;
+    margin-bottom: 40px;  
+    
+}
+
+.flex .image{
+    text-align: center;  
+}
+
+.flex .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;  
+}
+
+.introduces .title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.introduces .text {
+    text-align: center;
+}
+
+.introduces img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+}
+
+
+/*PC用設定*/
+@media screen and (min-width: 960px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        
+         }
+    
+    .header h1 {
+        margin-left: 150px;
+        text-align: center;      
+    }
+    
+    .header ul {
+        display: flex;
+        list-style-type: none;
+        width: 250px;
+        margin-right: 60px;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+
+    .flex {
+        display: flex;
+        text-align: center;
+            
+    }
+    
+    .flex .title {
+        padding-left: 90px;
+        text-align: left;
+    }
+
+    .flex .text {
+    font-size: small;
+    text-align: end;
+    width: 100%;
+    height: 80px;
+    margin: 30px 50px 0 16px;
+    padding: 0;
+    overflow: hidden;
+
+    }
+
+    .introduces {
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduces img {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .introduces .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduces text {
+        display: flex;
+        justify-content: center;
+    }
+   
+
+}
