@@ -1,8 +1,9 @@
 @charset "utf-8";
 /*iphone用設定*/
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .container {
+        
         padding: 4%;
     }
     
@@ -22,7 +23,7 @@
         padding: 5px 15px 0 20px;
         background-color: darkslategray;
         font-size: 20px;
-        width: 80px;
+        width: 100px;
         height: 35px;
         color: white
     }
@@ -85,21 +86,35 @@ footer {
 
 }
 
+@media screen and (min-width: 600px) {
 
-/*PC用設定*/
-@media screen and (min-width: 960px) {
+    .container {
+        padding: 4%;
+    }
+
+    .images img {
+        height: 600px;
+        width: 100%;
+    }
 
     .header {
         display: flex;
         justify-content: space-between;
-        
+
          }
-    
+
     .header h1 {
         margin-left: 150px;
-        text-align: center;      
+        margin-bottom: 1px;
+        padding: 5px 15px 0 10px;
+        background-color: darkslategray;
+        font-size: 20px;
+        width: 80px;
+        height: 35px;
+        color: white;
+             
     }
-    
+
     .header ul {
         display: flex;
         list-style-type: none;
@@ -109,16 +124,31 @@ footer {
         justify-content: space-between;
     }
 
+
+
+    .suzuki h1,h3 {
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 1px;
+        font-size: 30px;   
+         padding-top: 40px;
+    }
+
     .flex {
         display: flex;
         justify-content: center;
-        
-            
+
+
     }
-    
+
     .flex .title {
-        padding-left: 90px;
+        padding-left: 40px;
         text-align: left;
+        font-weight: bold;
+        
+        
+        
     }
 
     .flex .text {
@@ -132,25 +162,43 @@ footer {
 
     }
 
+    .image img {
+        border-radius: 50%;
+    }
+
     .introduces {
+        
+        
         display: flex;
         justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        
     }
 
     .introduces img {
+        display: flex;
         width: 300px;
         margin-right: 20px;
+        
+    
     }
 
     .introduces .title {
-        display: flex;
-        justify-content: center;
+        font-weight: bold;
+        text-align: center;
+        
     }
 
     .introduces text {
-        display: flex;
-        justify-content: center;
+        text-align: center;
+        
+        
     }
-   
+
+    footer {
+        text-align: center;
+    }
+
 
 }
